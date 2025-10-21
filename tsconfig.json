@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+
+    /* Module Resolution */
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    /* Library-Specific Options */
+    "jsx": "react-jsx",          // Use the modern JSX transform for React
+    "declaration": true,           // Generate .d.ts files for type safety
+    "declarationMap": true,        // Generate source maps for declaration files
+    "sourceMap": true,             // Generate source maps for debugging
+    "outDir": "./dist",            // Specify output directory
+    "rootDir": "./src",            // Specify the root of your source files
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Standard libraries for web environments
+    "noEmit": true                 // IMPORTANT: Let the bundler (tsup) handle emitting files
+  },
+  "include": ["src"],              // Only compile files in the 'src' directory
+  "exclude": ["node_modules", "dist"] // Exclude these directories
+}

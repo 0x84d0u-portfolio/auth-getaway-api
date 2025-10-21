@@ -1,0 +1,9 @@
+# Auth getaway
+
+## Environment variables 
+
+```
+PORT=...
+DB_URL=...
+COOKIE_SECRET=...
+```
